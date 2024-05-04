@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+   
+}
+
+body{
+    font-family: 'Poetsen One', sans-serif;
+    background-color: rgb(233, 100, 100);
+}
+
+.section-1 {
+    grid-area: a;
+    /* background-color: red; */
+    text-align: center;
+}
+
+
+
+.section-2 {
+    grid-area: b;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+
+.section-3 {
+    grid-area: c;
+    /* background-color: blue; */
+    padding: 20px;
+}
+
+.section-4 {
+    grid-area: d;
+    /* background-color: brown; */
+    padding: 20px;
+    
+}
+
+
+.container-grid{
+    grid-template-areas: 'a a a a a a'
+    'b b b b b b'
+    'c c c c c c'
+    'd d d d d d';
+}
+
+/* SECTION 1 */
+
+.title{
+    font-size: 64px;
+    color: rgb(224, 198, 47);
+}
+
+/* SECTION 2 */
+
+.content-img{
+    display: flex;
+    justify-content: center;
+}
+
+.img-banner{
+    width: 120vh;
+}
+
+/* SECTION 3 */
+
+marquee{
+    font-size: 50px;
+    color: rgb(224, 198, 47);
+}
+
+.content-marquee{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height:auto;
+    background-color: red;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+
+
+
+/* SECTION 4  */
+
+.content-circle{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.circle{
+    width: 300px;
+    height: 300px;
+    border-radius: 60px;
+    background-color: rgb(230, 33, 33);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* MEDIA QUERYS  */
+
+@media only screen and (max-width: 600px) {
+
+    /* SECTION 1 */
+    .title{
+        font-size: 50px;
+    }
+   
+
+    /* SECTION 2 */
+    .img-banner{
+        width: 55vh;
+    }
+
+    /* SECTION 3 */
+    marquee{
+        font-size: 30px;
+    }
+
+    .content-marquee {
+        /* Ajustamos el espacio entre los elementos */
+        gap: 5px;
+        display: flex; /* Mostramos los elementos en una fila */
+        flex-wrap: nowrap; /* Evitamos que los elementos se envuelvan */
+    }
+
+    .item {
+        /* Fijamos un ancho máximo para los elementos */
+        max-width: 200px;
+    }
+
+
+    /* SECTION 4 */
+    .circle{
+        width: 300px;
+        height: 250px;
+    }
+  }
+
+
+
+
